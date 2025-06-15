@@ -1,0 +1,125 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+h1, h2 {
+  color: #58a6ff;
+}
+
+a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background-color: #161b22;
+  padding: 40px 0;
+}
+
+.header-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-content .text {
+  max-width: 600px;
+}
+
+.profile-img img {
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid #58a6ff;
+}
+
+/* Section headings */
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Skills */
+.skill-badges {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.skill-badges span {
+  background-color: #21262d;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: #ffffff;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.skill-badges span:hover {
+  background-color: #30363d;
+}
+
+/* Interests */
+.interests ul {
+  list-style: square inside;
+  margin-top: 10px;
+}
+
+/* Projects */
+.projects p {
+  font-style: italic;
+  color: #888;
+}
+
+/* Contact */
+.contact a {
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  background-color: #161b22;
+  text-align: center;
+  padding: 20px 0;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-img {
+    margin-top: 20px;
+  }
+
+  .skill-badges {
+    justify-content: center;
+  }
+}
